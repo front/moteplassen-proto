@@ -23,6 +23,8 @@
   text-align: left;
 
   @extend %clearfix;
+
+  // @include background-grid;
 }
 
 .l-container {
@@ -31,6 +33,27 @@
 
 .l-row {
   @extend %l-row;
+}
+
+// Layout
+.l-left-sidebar {
+  @include grid-span(3,1);
+}
+
+.l-right-sidebar {
+  @include grid-span(3,10);
+}
+
+.l-column--two-sidebars {
+  @include grid-span(6,4);
+}
+
+.l-column--left-sidebar {
+  @include grid-span(9,4);
+}
+
+.l-column--right-sidebar {
+  @include grid-span(9,1);
 }
 
 // Header

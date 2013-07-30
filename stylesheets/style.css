@@ -234,6 +234,46 @@ table tr {
   text-align: left;
 }
 
+.l-left-sidebar {
+  width: 21.73913%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0%;
+  clear: none;
+}
+
+.l-right-sidebar {
+  width: 21.73913%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+
+.l-column--two-sidebars {
+  width: 47.82609%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 26.08696%;
+  clear: none;
+}
+
+.l-column--left-sidebar {
+  width: 73.91304%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+
+.l-column--right-sidebar {
+  width: 73.91304%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0%;
+  clear: none;
+}
+
 #header {
   padding-bottom: 1.125em;
 }
@@ -245,6 +285,45 @@ table tr {
 #footer {
   padding-top: 2.34375em;
   padding-bottom: 2.34375em;
+}
+
+#header {
+  background-color: #50acca;
+}
+#header .l-row {
+  text-align: center;
+}
+
+.header--logo {
+  font-size: 3em;
+  line-height: 1.5625em;
+  text-transform: uppercase;
+  letter-spacing: 0.04167em;
+}
+
+.header--tagline {
+  font-size: 1.5em;
+  line-height: 1.04167em;
+  line-height: 1.30208em;
+  margin-bottom: 1.5625em;
+  color: #def2fe;
+  font-weight: 100;
+  letter-spacing: 0.04167em;
+}
+
+#footer {
+  background-color: #39454b;
+  color: white;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.credit {
+  margin-bottom: 0;
+  font-size: 0.875em;
+  text-align: right;
+}
+.credit a {
+  text-decoration: none;
 }
 
 .link--speaker {
@@ -551,41 +630,7 @@ table tr {
   }
 }
 
-#header {
-  background-color: #50acca;
-}
-#header .l-row {
-  text-align: center;
-}
-
-.header--logo {
-  font-size: 3em;
-  line-height: 1.5625em;
-  text-transform: uppercase;
-  letter-spacing: 0.04167em;
-}
-
-.header--tagline {
-  font-size: 1.5em;
-  line-height: 1.04167em;
-  line-height: 1.30208em;
-  margin-bottom: 1.5625em;
-  color: #def2fe;
-  font-weight: 100;
-  letter-spacing: 0.04167em;
-}
-
-#footer {
-  background-color: #39454b;
-  color: white;
-  color: rgba(255, 255, 255, 0.45);
-}
-
-.credit {
-  margin-bottom: 0;
-  font-size: 0.875em;
-  text-align: right;
-}
-.credit a {
-  text-decoration: none;
+.testimonials--form textarea {
+  min-height: 120px;
+  width: 100%;
 }

@@ -6,6 +6,7 @@
 //
 // All styling, non box model properties go here
 
+@import 'partials/global';
 @import 'partials/nav';
 @import 'partials/nav-main';
 @import 'partials/buttons';
@@ -13,50 +14,4 @@
 @import 'partials/social-media';
 @import 'partials/sponsors';
 
-
-// Header
-#header {
-  background-color: $color-header-bg;
-
-  .l-row {
-    text-align: center;
-  }
-}
-.header--logo {
-  @include adjust-font-size-to(48px, 3);
-  text-transform: uppercase;
-  letter-spacing: em(2,48);
-}
-.header--tagline {
-  @include adjust-font-size-to(24px, 1);
-  @include adjust-leading-to(30/24, 24px);
-  @include margin-trailer(1);
-
-  color: $color-light;
-  font-weight: 100;
-  letter-spacing: em(1,24);
-}
-
-// Content
-#content {
-}
-
-// Footer
-#footer {
-  background-color: $color-footer-bg;
-  color: white;
-  color: transparentize(white, 0.55);
-}
-
-// Misc
-.credit {
-  @extend %l-row;
-  margin-bottom: 0;
-
-  font-size: em(14);
-  text-align: right;
-
-  a {
-    text-decoration: none;
-  }
-}
+@import 'partials/testimonials';
