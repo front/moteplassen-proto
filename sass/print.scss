@@ -1,0 +1,22 @@
+// Print File
+//
+// This file gets turned into style.css. This file should really
+//  hold nothing except for imports of your base, layout, and design
+//  partials.
+// This file is styles specific to Printed files.
+$legacy-support-for-ie6: false;
+$legacy-support-for-ie7: true;
+$legacy-support-for-ie8: true;
+$legacy-support-for-mozilla: false;
+
+// Base Import
+@import 'partials/global/base';
+
+// Import Base
+@import 'partials/base/print-base';
+
+// Import Layout
+@import 'partials/layout/print-layout';
+
+// Import Module
+@import 'partials/module/print-module';

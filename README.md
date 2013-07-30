@@ -1,4 +1,4 @@
-moteplassen-proto
+Møteplassen proto
 =================
 
 Møteplassen static prototype
