@@ -51,9 +51,13 @@
   @include adjust-leading-to(30/24, 24px);
   @include margin-trailer(1);
 
-  color: white;
+  color: $color-light;
   font-weight: 100;
   letter-spacing: em(1,24);
+}
+
+#content {
+  padding-top: em($base-line-height);
 }
 
 #footer {

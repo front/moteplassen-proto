@@ -1,0 +1,26 @@
+.link--speaker {
+  border-bottom: 1px solid $color-light-grey;
+  font-weight: 700;
+  text-decoration: none;
+
+  @include transition(color 0.5s);
+}
+
+// Mini pager
+.pager {
+  @include horizontal-list(10px);
+  @include adjust-font-size-to(14px);
+  font-weight: 700;
+
+  a {
+    @include link($color-link-alt);
+    border-bottom: 1px solid $color-light-grey;
+    text-decoration: none;
+  }
+}
+
+.pager--mini {
+  .last {
+    border-left: 2px solid $color-link-alt;
+  }
+}

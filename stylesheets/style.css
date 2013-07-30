@@ -98,41 +98,82 @@ html {
 
 h1 {
   font-size: 2.25em;
-  line-height: 1.38889em;
+  line-height: 2.08333em;
 }
 
 h2 {
   font-size: 1.625em;
-  line-height: 1.92308em;
+  line-height: 0.96154em;
+  margin-bottom: 0.96154em;
 }
 
 h3 {
   font-size: 1.25em;
   line-height: 1.25em;
+  margin-bottom: 1.25em;
 }
 
 h4 {
   font-size: 1.125em;
   line-height: 1.38889em;
+  margin-bottom: 1.38889em;
 }
 
 h5 {
   text-transform: uppercase;
+  margin-bottom: 1.5625em;
 }
 
 h6 {
   font-size: 0.875em;
   line-height: 1.78571em;
+  margin-bottom: 1.78571em;
+}
+
+p {
+  margin-bottom: 1.5625em;
+}
+
+hr {
+  margin-top: 2.34375em;
+  margin-bottom: 2.34375em;
 }
 
 body {
   color: #39454b;
   font-family: "Asap", sans-serif;
-  background: url('../images/grid-25px.png?1375179799');
 }
 
 h1, h2, h3, h4 {
   font-family: "Bree Serif", serif;
+}
+
+h5 {
+  font-weight: 700;
+}
+
+hr {
+  height: 0;
+  border: none;
+  border-top: 1px solid #dceef4;
+}
+
+strong, b {
+  font-weight: 700;
+}
+
+em, i {
+  font-style: oblique;
+}
+
+a, a:link, a:focus {
+  color: #50acca;
+}
+a:visited {
+  color: #3ca3c4;
+}
+a:hover {
+  color: #30839e;
 }
 
 .l-container {
@@ -170,13 +211,77 @@ h1, h2, h3, h4 {
   line-height: 1.04167em;
   line-height: 1.30208em;
   margin-bottom: 1.5625em;
-  color: white;
+  color: #def2fe;
   font-weight: 100;
   letter-spacing: 0.04167em;
 }
 
+#content {
+  padding-top: 1.5625em;
+}
+
 #footer {
   background-color: #39454b;
+}
+
+.link--speaker {
+  border-bottom: 1px solid #e5e7e8;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.pager {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0.875em;
+  line-height: 1.78571em;
+  font-weight: 700;
+}
+.pager:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.pager li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.pager li:first-child, .pager li.first {
+  padding-left: 0;
+}
+.pager li:last-child {
+  padding-right: 0;
+}
+.pager li.last {
+  padding-right: 0;
+}
+.pager a {
+  border-bottom: 1px solid #e5e7e8;
+  text-decoration: none;
+}
+.pager a, .pager a:link, .pager a:focus {
+  color: #ffcb66;
+}
+.pager a:visited {
+  color: #ffc24d;
+}
+.pager a:hover {
+  color: #ffb11a;
+}
+
+.pager--mini .last {
+  border-left: 2px solid #ffcb66;
 }
 
 .menu--main {

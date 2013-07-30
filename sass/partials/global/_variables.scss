@@ -14,7 +14,14 @@ $base-line-height: 25px;
 $max-width: 920px;
 
 // Colors
-$color-body: #39454B;
+$color-body:     #39454B;
+$color-link:     #50ACCA;
+$color-link-alt: #FFCB66;
 
-$color-header-bg: #50ACCA;
-$color-footer-bg: #39454B;
+$color-light: #DEF2FE;
+$color-medium-light: #DCEEF4;
+
+$color-light-grey: #E5E7E8;
+
+$color-header-bg: $color-link !default;
+$color-footer-bg: $color-body !default;

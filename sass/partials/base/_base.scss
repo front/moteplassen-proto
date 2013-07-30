@@ -14,39 +14,75 @@
 @include establish-baseline;
 
 h1 {
-  @include adjust-font-size-to(36px);
+  @include adjust-font-size-to(36px, 3);
 }
 
 h2 {
-  @include adjust-font-size-to(26px);
+  @include adjust-font-size-to(26px, 1);
+  @include margin-trailer(1, 26px);
 }
 
 h3 {
   @include adjust-font-size-to(20px);
+  @include margin-trailer(1, 20px);
 }
 
 h4 {
   @include adjust-font-size-to(18px);
+  @include margin-trailer(1, 18px);
 }
 
 h5 {
   // @include adjust-font-size-to(16);
   text-transform: uppercase;
+  @include margin-trailer(1);
 }
 
 h6 {
   @include adjust-font-size-to(14px);
+  @include margin-trailer(1, 14px);
 }
 
-// Global
+p {
+  @include margin-trailer(1);
+}
+
+hr {
+  @include margin-leader(1.5);
+  @include margin-trailer(1.5);
+}
+
+// Global style
 body {
   color: $color-body;
   font-family: $font-family-sans;
 
   // Debug
-  @include debug-vertical-alignment('grid-25px.png');
+  // @include debug-vertical-alignment('grid-25px.png');
 }
 
 h1, h2, h3, h4 {
   font-family: $font-family-serif;
+}
+
+h5 {
+  font-weight: 700;
+}
+
+hr {
+  height: 0;
+  border: none;
+  border-top: 1px solid $color-medium-light;
+}
+
+strong, b {
+  font-weight: 700;
+}
+
+em, i {
+  font-style: oblique;
+}
+
+a {
+  @include link;
 }
