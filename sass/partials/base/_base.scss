@@ -5,3 +5,47 @@
 //  into this file.
 //
 // All box model properties go here
+
+// Reset
+@include global-reset;
+@include reset-html5;
+
+// Baseline
+@include establish-baseline;
+
+h1 {
+  @include adjust-font-size-to(36px);
+}
+
+h2 {
+  @include adjust-font-size-to(26px);
+}
+
+h3 {
+  @include adjust-font-size-to(20px);
+}
+
+h4 {
+  @include adjust-font-size-to(18px);
+}
+
+h5 {
+  // @include adjust-font-size-to(16);
+  text-transform: uppercase;
+}
+
+h6 {
+  @include adjust-font-size-to(14px);
+}
+
+// Global
+body {
+  font-family: $font-family-sans;
+
+  // Debug
+  @include debug-vertical-alignment('grid-25px.png');
+}
+
+h1, h2, h3, h4 {
+  font-family: $font-family-serif;
+}
