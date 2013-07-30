@@ -10,3 +10,19 @@
 @import 'partials/nav-main';
 @import 'partials/buttons';
 @import 'partials/event-table';
+@import 'partials/social-media';
+@import 'partials/sponsors';
+
+
+// Misc
+.credit {
+  @extend %l-row;
+  margin-bottom: 0;
+
+  font-size: em(14);
+  text-align: right;
+
+  a {
+    text-decoration: none;
+  }
+}

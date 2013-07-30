@@ -1,0 +1,22 @@
+.block--sponsors {
+  float: right;
+
+  h2 {
+    font-family: $font-family-sans;
+    font-size: em(12);
+    line-height: 1;
+    margin-bottom: -1em;
+  }
+}
+
+// Logos
+$logos: 'logos';
+$logos-names: air;
+@include sprite-map-generator($logos, 'retina');
+
+@each $i in $logos-names {
+  .logo-#{$i} {
+    @include replace-text-pe($logos, $i, 'retina');
+    display: inline-block;
+  }
+}

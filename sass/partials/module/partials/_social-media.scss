@@ -1,0 +1,22 @@
+$social: 'social';
+$social-icons: facebook, twitter, email;
+@include sprite-map-generator($social, 'retina');
+
+.block--social-media {
+  float: left;
+}
+
+.menu--social-media {
+  @include horizontal-list(13px);
+
+  @each $i in $social-icons {
+    .item-#{$i} {
+      @include replace-text-pe($social, $i, 'retina');
+    }
+  }
+
+  a {
+    display: inline-block;
+    vertical-align: top;
+  }
+}

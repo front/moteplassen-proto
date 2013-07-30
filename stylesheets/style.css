@@ -9,13 +9,19 @@ img, video {
   height: auto;
 }
 
-.l-container:after, .l-row:after {
+.menu--social-media .item-facebook, .menu--social-media .item-twitter, .menu--social-media .item-email, .logo-air {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.l-container:after, .l-row:after, .credit:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.l-container:after, .l-row:after {
+.l-container:after, .l-row:after, .credit:after {
   content: "";
   display: table;
   clear: both;
@@ -147,6 +153,12 @@ textarea, input {
   font-size: 0.875em;
   line-height: 1.78571em;
   margin-bottom: 0.89286em;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
 }
 
 table {
@@ -196,6 +208,7 @@ a:hover {
 textarea, input[type=text] {
   padding: 0.57143em 0.71429em;
   border: 2px solid #a7d5e4;
+  font-family: "Asap", sans-serif;
   color: #6e8591;
 }
 
@@ -212,7 +225,7 @@ table tr {
   text-align: center;
 }
 
-.l-row {
+.l-row, .credit {
   clear: both;
   width: 100%;
   max-width: 920px;
@@ -251,7 +264,11 @@ table tr {
 }
 
 #footer {
+  padding-top: 2.34375em;
+  padding-bottom: 2.34375em;
   background-color: #39454b;
+  color: white;
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .link--speaker {
@@ -408,4 +425,161 @@ table tr {
 .event--notice {
   color: #fdb813;
   font-weight: 700;
+}
+
+.ie6 .menu--social-media .item-facebook, .ie7 .menu--social-media .item-facebook, .ie8 .menu--social-media .item-facebook, .ie6 .menu--social-media .item-twitter, .ie7 .menu--social-media .item-twitter, .ie8 .menu--social-media .item-twitter, .ie6 .menu--social-media .item-email, .ie7 .menu--social-media .item-email, .ie8 .menu--social-media .item-email {
+  background-image: url('../images/social-se8c079db5f.png');
+  background-repeat: no-repeat;
+}
+
+.block--social-media {
+  float: left;
+}
+
+.menu--social-media {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.menu--social-media:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.menu--social-media li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+.menu--social-media li:first-child, .menu--social-media li.first {
+  padding-left: 0;
+}
+.menu--social-media li:last-child {
+  padding-right: 0;
+}
+.menu--social-media li.last {
+  padding-right: 0;
+}
+.menu--social-media .item-facebook {
+  width: 28px;
+  height: 28px;
+}
+.ie6 .menu--social-media .item-facebook, .ie7 .menu--social-media .item-facebook, .ie8 .menu--social-media .item-facebook {
+  background-position: 0 -56px;
+}
+@media (max-resolution: 1.4dppx), (-webkit-max-device-pixel-ratio: 1.4), (max--moz-device-pixel-ratio: 1.4), (max-resolution: 134.4dpi) {
+  .menu--social-media .item-facebook {
+    background-image: url('../images/social-se8c079db5f.png');
+    background-repeat: no-repeat;
+    background-position: 0 -56px;
+  }
+}
+@media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  .menu--social-media .item-facebook {
+    background-image: url('../images/social_2x-s046e0bc0c2.png');
+    background-repeat: no-repeat;
+    background-size: 28px 84px;
+    background-position: 0 -56px;
+  }
+}
+.menu--social-media .item-twitter {
+  width: 28px;
+  height: 28px;
+}
+.ie6 .menu--social-media .item-twitter, .ie7 .menu--social-media .item-twitter, .ie8 .menu--social-media .item-twitter {
+  background-position: 0 0;
+}
+@media (max-resolution: 1.4dppx), (-webkit-max-device-pixel-ratio: 1.4), (max--moz-device-pixel-ratio: 1.4), (max-resolution: 134.4dpi) {
+  .menu--social-media .item-twitter {
+    background-image: url('../images/social-se8c079db5f.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+@media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  .menu--social-media .item-twitter {
+    background-image: url('../images/social_2x-s046e0bc0c2.png');
+    background-repeat: no-repeat;
+    background-size: 28px 84px;
+    background-position: 0 0;
+  }
+}
+.menu--social-media .item-email {
+  width: 28px;
+  height: 28px;
+}
+.ie6 .menu--social-media .item-email, .ie7 .menu--social-media .item-email, .ie8 .menu--social-media .item-email {
+  background-position: 0 -28px;
+}
+@media (max-resolution: 1.4dppx), (-webkit-max-device-pixel-ratio: 1.4), (max--moz-device-pixel-ratio: 1.4), (max-resolution: 134.4dpi) {
+  .menu--social-media .item-email {
+    background-image: url('../images/social-se8c079db5f.png');
+    background-repeat: no-repeat;
+    background-position: 0 -28px;
+  }
+}
+@media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  .menu--social-media .item-email {
+    background-image: url('../images/social_2x-s046e0bc0c2.png');
+    background-repeat: no-repeat;
+    background-size: 28px 84px;
+    background-position: 0 -28px;
+  }
+}
+.menu--social-media a {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.block--sponsors {
+  float: right;
+}
+.block--sponsors h2 {
+  font-family: "Asap", sans-serif;
+  font-size: 0.75em;
+  line-height: 1;
+  margin-bottom: -1em;
+}
+
+.ie6 .logo-air, .ie7 .logo-air, .ie8 .logo-air {
+  background-image: url('../images/logos-sb8337550bf.png');
+  background-repeat: no-repeat;
+}
+
+.logo-air {
+  width: 282px;
+  height: 61px;
+  display: inline-block;
+}
+.ie6 .logo-air, .ie7 .logo-air, .ie8 .logo-air {
+  background-position: 0 0;
+}
+@media (max-resolution: 1.4dppx), (-webkit-max-device-pixel-ratio: 1.4), (max--moz-device-pixel-ratio: 1.4), (max-resolution: 134.4dpi) {
+  .logo-air {
+    background-image: url('../images/logos-sb8337550bf.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+@media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  .logo-air {
+    background-image: url('../images/logos_2x-sd91ac479c4.png');
+    background-repeat: no-repeat;
+    background-size: 282px 61px;
+    background-position: 0 0;
+  }
+}
+
+.credit {
+  margin-bottom: 0;
+  font-size: 0.875em;
+  text-align: right;
+}
+.credit a {
+  text-decoration: none;
 }

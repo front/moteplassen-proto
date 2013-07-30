@@ -61,5 +61,10 @@
 }
 
 #footer {
+  @include padding-leader(1.5);
+  @include padding-trailer(1.5);
   background-color: $color-footer-bg;
+
+  color: white;
+  color: transparentize(white, 0.55);
 }
