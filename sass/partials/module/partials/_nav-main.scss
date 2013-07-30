@@ -1,0 +1,23 @@
+.nav--main {
+}
+
+.menu--main {
+  @include horizontal-list(13px);
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include adjust-font-size-to(21px, 3);
+  text-transform: uppercase;
+
+  li {}
+  a {
+    color: $color-body;
+    text-decoration: none;
+
+    &:hover,
+    &.active {
+      color: white;
+    }
+  }
+}

@@ -5,3 +5,57 @@
 //  into this file.
 //
 // All box model properties go here
+
+%l-container {
+  clear: both;
+  width: 100%;
+  text-align: center;
+
+  @extend %clearfix;
+}
+
+%l-row {
+  clear: both;
+  width: 100%;
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+
+  @extend %clearfix;
+}
+
+.l-container {
+  @extend %l-container;
+}
+
+.l-row {
+  @extend %l-row;
+}
+
+#header {
+  padding-bottom: em(18);
+  background-color: $color-header-bg;
+
+  .l-row {
+    text-align: center;
+  }
+}
+.header--logo {
+  @include adjust-font-size-to(48px, 3);
+  text-transform: uppercase;
+  letter-spacing: em(2,48);
+}
+.header--tagline {
+  @include adjust-font-size-to(24px, 1);
+  @include adjust-leading-to(30/24, 24px);
+  @include margin-trailer(1);
+
+  color: white;
+  font-weight: 100;
+  letter-spacing: em(1,24);
+}
+
+#footer {
+  background-color: $color-footer-bg;
+}
