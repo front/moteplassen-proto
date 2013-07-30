@@ -52,6 +52,11 @@ hr {
   @include margin-trailer(1.5);
 }
 
+textarea, input {
+  @include adjust-font-size-to(14px);
+  @include margin-trailer(0.5, 14px);
+}
+
 // Global style
 body {
   color: $color-body;
@@ -85,4 +90,11 @@ em, i {
 
 a {
   @include link;
+}
+
+textarea, input[type=text] {
+  padding: em(8,14) em(10,14);
+  border: 2px solid $color-form-border;
+
+  color: $color-form-color;
 }

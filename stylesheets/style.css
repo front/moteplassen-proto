@@ -139,6 +139,12 @@ hr {
   margin-bottom: 2.34375em;
 }
 
+textarea, input {
+  font-size: 0.875em;
+  line-height: 1.78571em;
+  margin-bottom: 0.89286em;
+}
+
 body {
   color: #39454b;
   font-family: "Asap", sans-serif;
@@ -174,6 +180,12 @@ a:visited {
 }
 a:hover {
   color: #30839e;
+}
+
+textarea, input[type=text] {
+  padding: 0.57143em 0.71429em;
+  border: 2px solid #a7d5e4;
+  color: #6e8591;
 }
 
 .l-container {
@@ -325,4 +337,31 @@ a:hover {
 }
 .menu--main a:hover, .menu--main a.active {
   color: white;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.59375em;
+  border: none;
+  background-color: #50acca;
+  font-size: 1em;
+  line-height: 1.5625em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.button, .button:link, .button:visited {
+  color: white;
+}
+.button:hover {
+  background-color: #ffcb66;
+}
+.button.small {
+  min-width: 170px;
+}
+.button.medium {
+  min-width: 255px;
+}
+.button.large {
+  min-width: 340px;
 }

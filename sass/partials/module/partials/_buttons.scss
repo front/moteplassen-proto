@@ -1,0 +1,32 @@
+$button-padding: (44 - $base-line-height);
+
+.button {
+  display: inline-block;
+  padding: em($button-padding / 2);
+  border: none;
+
+  background-color: $color-link;
+
+  font-size: 1em;
+  line-height: em($base-line-height);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &, &:link, &:visited {
+    color: white;
+  }
+  &:hover {
+    background-color: $color-link-alt;
+  }
+
+  &.small {
+    min-width: 170px;
+  }
+  &.medium {
+    min-width: 170px * 1.5;
+  }
+  &.large {
+    min-width: 170px * 2;
+  }
+}
