@@ -1,0 +1,37 @@
+.event--table {
+  td {
+    vertical-align: top;
+  }
+}
+
+.event--break {
+  background-color: $color-table-zebra;
+}
+
+.event--session {
+}
+
+.event--session-multiple {
+  border-top: none;
+
+  .event--time {
+    text-indent: -9999px;
+  }
+}
+
+.event--time {}
+
+.event--description {
+  padding-left: 0;
+}
+
+.event--speaker {
+  white-space: nowrap;
+
+  color: $color-link;
+}
+
+.event--notice {
+  color: $color-notice;
+  font-weight: 700;
+}

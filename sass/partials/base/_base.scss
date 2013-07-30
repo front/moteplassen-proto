@@ -52,11 +52,23 @@ hr {
   @include margin-trailer(1.5);
 }
 
+form {
+  @include margin-trailer(1);
+}
+
 textarea, input {
   @include adjust-font-size-to(14px);
   @include margin-trailer(0.5, 14px);
 }
 
+table {
+  @include margin-trailer(1);
+
+  tr {}
+  td {
+    padding: em(22) em(20);
+  }
+}
 // Global style
 body {
   color: $color-body;
@@ -77,7 +89,7 @@ h5 {
 hr {
   height: 0;
   border: none;
-  border-top: 1px solid $color-medium-light;
+  border-top: 1px solid $color-border;
 }
 
 strong, b {
@@ -97,4 +109,13 @@ textarea, input[type=text] {
   border: 2px solid $color-form-border;
 
   color: $color-form-color;
+}
+
+table {
+  border-bottom: 1px solid $color-table-border;
+
+  tr {
+    border-top: 1px solid $color-table-border;
+  }
+  td {}
 }

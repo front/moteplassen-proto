@@ -139,10 +139,21 @@ hr {
   margin-bottom: 2.34375em;
 }
 
+form {
+  margin-bottom: 1.5625em;
+}
+
 textarea, input {
   font-size: 0.875em;
   line-height: 1.78571em;
   margin-bottom: 0.89286em;
+}
+
+table {
+  margin-bottom: 1.5625em;
+}
+table td {
+  padding: 1.375em 1.25em;
 }
 
 body {
@@ -186,6 +197,13 @@ textarea, input[type=text] {
   padding: 0.57143em 0.71429em;
   border: 2px solid #a7d5e4;
   color: #6e8591;
+}
+
+table {
+  border-bottom: 1px solid #dceef4;
+}
+table tr {
+  border-top: 1px solid #dceef4;
 }
 
 .l-container {
@@ -362,6 +380,32 @@ textarea, input[type=text] {
 .button.medium {
   min-width: 255px;
 }
-.button.large {
-  min-width: 340px;
+
+.event--table td {
+  vertical-align: top;
+}
+
+.event--break {
+  background-color: #f6fbfc;
+}
+
+.event--session-multiple {
+  border-top: none;
+}
+.event--session-multiple .event--time {
+  text-indent: -9999px;
+}
+
+.event--description {
+  padding-left: 0;
+}
+
+.event--speaker {
+  white-space: nowrap;
+  color: #50acca;
+}
+
+.event--notice {
+  color: #fdb813;
+  font-weight: 700;
 }

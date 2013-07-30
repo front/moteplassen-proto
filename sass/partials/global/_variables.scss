@@ -18,12 +18,16 @@ $color-body:     #39454B;
 $color-link:     #50ACCA;
 $color-link-alt: #FFCB66;
 
+$color-border: #DCEEF4;
+$color-notice: #FDB813;
+
 $color-form-color: #6E8591;
 $color-form-border: #A7D5E4;
 
-$color-light: #DEF2FE;
-$color-medium-light: #DCEEF4;
+$color-table-border: $color-border;
+$color-table-zebra: #F6FBFC;
 
+$color-light: #DEF2FE;
 $color-light-grey: #E5E7E8;
 
 $color-header-bg: $color-link !default;
