@@ -236,27 +236,6 @@ table tr {
 
 #header {
   padding-bottom: 1.125em;
-  background-color: #50acca;
-}
-#header .l-row {
-  text-align: center;
-}
-
-.header--logo {
-  font-size: 3em;
-  line-height: 1.5625em;
-  text-transform: uppercase;
-  letter-spacing: 0.04167em;
-}
-
-.header--tagline {
-  font-size: 1.5em;
-  line-height: 1.04167em;
-  line-height: 1.30208em;
-  margin-bottom: 1.5625em;
-  color: #def2fe;
-  font-weight: 100;
-  letter-spacing: 0.04167em;
 }
 
 #content {
@@ -266,9 +245,6 @@ table tr {
 #footer {
   padding-top: 2.34375em;
   padding-bottom: 2.34375em;
-  background-color: #39454b;
-  color: white;
-  color: rgba(255, 255, 255, 0.45);
 }
 
 .link--speaker {
@@ -573,6 +549,36 @@ table tr {
     background-size: 282px 61px;
     background-position: 0 0;
   }
+}
+
+#header {
+  background-color: #50acca;
+}
+#header .l-row {
+  text-align: center;
+}
+
+.header--logo {
+  font-size: 3em;
+  line-height: 1.5625em;
+  text-transform: uppercase;
+  letter-spacing: 0.04167em;
+}
+
+.header--tagline {
+  font-size: 1.5em;
+  line-height: 1.04167em;
+  line-height: 1.30208em;
+  margin-bottom: 1.5625em;
+  color: #def2fe;
+  font-weight: 100;
+  letter-spacing: 0.04167em;
+}
+
+#footer {
+  background-color: #39454b;
+  color: white;
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .credit {
