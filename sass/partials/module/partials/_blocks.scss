@@ -1,0 +1,40 @@
+.block--text-info {
+  .title {
+    @include margin-leader(0.5, 18px);
+    @include margin-trailer(0.5, 18px);
+  }
+  p {
+    @include adjust-font-size-to(14px);
+  }
+}
+
+.block--stats {
+  text-align: center;
+
+  .title, p {
+    @include adjust-font-size-to(18px);
+    @include margin-leader(0.5, 18px);
+    margin-bottom: 0;
+  }
+  p {
+    margin-top: 0;
+    font-family: $font-family-serif;
+  }
+}
+// 6e8591
+.block--stats-count {
+  @include adjust-font-size-to(48px);
+  color: #6E8591;
+  font-weight: 700;
+  line-height: 1;
+
+  em {
+    display: block;
+    margin-bottom: 0.25em;
+
+    font-size: em(12,48);
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}

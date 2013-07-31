@@ -287,6 +287,10 @@ table tr {
   padding-bottom: 2.34375em;
 }
 
+.content--home .l-row {
+  padding-top: 1.5625em;
+}
+
 #header {
   background-color: #50acca;
 }
@@ -630,7 +634,69 @@ table tr {
   }
 }
 
+.testimonials--form h2 {
+  line-height: 1.40533em;
+}
 .testimonials--form textarea {
+  margin-bottom: 0.78125em;
   min-height: 120px;
   width: 100%;
+  vertical-align: top;
+}
+.testimonials--form input {
+  vertical-align: top;
+}
+
+.testimonials--list header {
+  float: left;
+}
+.testimonials--list .pager {
+  float: right;
+}
+.testimonials--list .title {
+  font-size: 1.125em;
+  line-height: 1.38889em;
+  margin-bottom: 1.38889em;
+}
+.testimonials--list article {
+  clear: both;
+}
+
+.block--text-info .title {
+  margin-top: 0.69444em;
+  margin-bottom: 0.69444em;
+}
+.block--text-info p {
+  font-size: 0.875em;
+  line-height: 1.78571em;
+}
+
+.block--stats {
+  text-align: center;
+}
+.block--stats .title, .block--stats p {
+  font-size: 1.125em;
+  line-height: 1.38889em;
+  margin-top: 0.69444em;
+  margin-bottom: 0;
+}
+.block--stats p {
+  margin-top: 0;
+  font-family: "Bree Serif", serif;
+}
+
+.block--stats-count {
+  font-size: 3em;
+  line-height: 1.5625em;
+  color: #6E8591;
+  font-weight: 700;
+  line-height: 1;
+}
+.block--stats-count em {
+  display: block;
+  margin-bottom: 0.25em;
+  font-size: 0.25em;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
 }

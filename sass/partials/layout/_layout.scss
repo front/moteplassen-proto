@@ -71,3 +71,8 @@
   @include padding-leader(1.5);
   @include padding-trailer(1.5);
 }
+
+// Page
+.content--home .l-row {
+  padding-top: em($base-line-height * 1);
+}
