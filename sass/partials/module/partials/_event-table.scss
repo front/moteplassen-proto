@@ -26,9 +26,17 @@
 }
 
 .event--speaker {
-  white-space: nowrap;
-
+  width: (240/940) * 100%;
   color: $color-link;
+
+  a {
+    margin-left: 1.35em;
+    white-space: nowrap;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
 }
 
 .event--notice {

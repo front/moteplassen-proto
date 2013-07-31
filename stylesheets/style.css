@@ -206,6 +206,11 @@ a:hover {
   color: #30839e;
 }
 
+ol {
+  list-style-type: decimal;
+  padding-left: 2em;
+}
+
 textarea, input[type=text] {
   padding: 0.57143em 0.71429em;
   border: 2px solid #a7d5e4;
@@ -477,8 +482,15 @@ table tr {
 }
 
 .event--speaker {
-  white-space: nowrap;
+  width: 25.53191%;
   color: #50acca;
+}
+.event--speaker a {
+  margin-left: 1.35em;
+  white-space: nowrap;
+}
+.event--speaker a:first-child {
+  margin-left: 0;
 }
 
 .event--notice {
@@ -782,4 +794,81 @@ table tr {
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.program {
+  padding-top: 2.34375em;
+  border-top: 1px solid #dceef4;
+}
+
+.program--nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin-bottom: 1.5625em;
+}
+.program--nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.program--nav li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+.program--nav li:first-child, .program--nav li.first {
+  padding-left: 0;
+}
+.program--nav li:last-child {
+  padding-right: 0;
+}
+.program--nav li.last {
+  padding-right: 0;
+}
+.program--nav li {
+  border-left: 3px solid #39454b;
+}
+.program--nav li:first-child {
+  border-left: none;
+}
+.program--nav a {
+  border-bottom: 1px solid #e5e7e8;
+  font-size: 1.625em;
+  line-height: 0.96154em;
+  font-family: "Bree Serif", serif;
+  text-decoration: none;
+  -webkit-transition: color 0.4s;
+  -moz-transition: color 0.4s;
+  -o-transition: color 0.4s;
+  transition: color 0.4s;
+}
+.program--nav a.active {
+  color: #39454b;
+  border-bottom: none;
+}
+
+.js .program--day {
+  display: none;
+}
+.js .program--day.active {
+  display: block;
+}
+
+.program--header {
+  margin-bottom: 1.5625em;
+}
+.program--header p {
+  margin-bottom: 0;
+}
+.program--header ol {
+  padding-left: 2.5em;
+}
+.program--header li {
+  font-weight: 700;
 }

@@ -1,0 +1,56 @@
+.program {
+  @include padding-leader(1.5);
+  border-top: 1px solid $color-border;
+}
+
+.program--nav {
+  @include horizontal-list(13px);
+  @include margin-trailer(1);
+
+  li {
+    border-left: 3px solid $color-body;
+
+    &:first-child {
+      border-left: none;
+    }
+  }
+  a {
+    border-bottom: 1px solid $color-light-grey;
+
+    @include adjust-font-size-to(26px, 1);
+    font-family: $font-family-serif;
+    text-decoration: none;
+
+    @include transition(color 0.4s);
+
+    &.active {
+      color: $color-body;
+      border-bottom: none;
+    }
+  }
+}
+
+.program--day {
+
+  .js & {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
+.program--header {
+  @include margin-trailer(1);
+
+  p {
+    margin-bottom: 0;
+  }
+  ol {
+    padding-left: 2.5em;
+  }
+  li {
+    font-weight: 700;
+  }
+}
