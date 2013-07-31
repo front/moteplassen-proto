@@ -187,7 +187,7 @@ hr {
   border-top: 1px solid #dceef4;
 }
 
-strong, b {
+strong, b, label {
   font-weight: 700;
 }
 
@@ -289,6 +289,7 @@ table tr {
 
 .content--home .l-row {
   padding-top: 1.5625em;
+  padding-bottom: 1.5625em;
 }
 
 #header {
@@ -328,16 +329,6 @@ table tr {
 }
 .credit a {
   text-decoration: none;
-}
-
-.link--speaker {
-  border-bottom: 1px solid #e5e7e8;
-  font-weight: 700;
-  text-decoration: none;
-  -webkit-transition: color 0.5s;
-  -moz-transition: color 0.5s;
-  -o-transition: color 0.5s;
-  transition: color 0.5s;
 }
 
 .pager {
@@ -632,6 +623,51 @@ table tr {
     background-size: 282px 61px;
     background-position: 0 0;
   }
+}
+
+.speakers--grid > div {
+  padding-top: 0.78125em;
+}
+.speakers--grid .speakers--teaser {
+  width: 21.73913%;
+  clear: right;
+  float: left;
+  margin-left: 0%;
+  margin-right: 4.34783%;
+  margin-bottom: 2.34375em;
+  border-bottom: 1px dotted #b7c2c8;
+}
+.speakers--grid .speakers--teaser:nth-child(4n) {
+  width: 21.73913%;
+  clear: right;
+  float: right;
+  margin-right: 0%;
+}
+
+.speakers--teaser .title {
+  margin-bottom: 0.78125em;
+  font-family: "Asap", sans-serif;
+  font-size: 1em;
+  text-align: center;
+}
+.speakers--teaser img {
+  width: 100%;
+  height: auto;
+}
+.speakers--teaser p {
+  font-size: 0.875em;
+  line-height: 1.78571em;
+  margin-bottom: 0.89286em;
+}
+
+.link--speaker {
+  border-bottom: 1px solid #e5e7e8;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .testimonials--form h2 {

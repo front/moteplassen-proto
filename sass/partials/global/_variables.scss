@@ -17,14 +17,15 @@ $grids: 12;
 $gutters: 1;
 
 // Colors
-$color-body:     #39454B;
-$color-link:     #50ACCA;
-$color-link-alt: #FFCB66;
+$color-body:       #39454B;
+$color-body-light: #6E8591;
+$color-link:       #50ACCA;
+$color-link-alt:   #FFCB66;
 
 $color-border: #DCEEF4;
 $color-notice: #FDB813;
 
-$color-form-color: #6E8591;
+$color-form-color: $color-body-light;
 $color-form-border: #A7D5E4;
 
 $color-table-border: $color-border;

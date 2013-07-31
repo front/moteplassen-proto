@@ -1,11 +1,3 @@
-.link--speaker {
-  border-bottom: 1px solid $color-light-grey;
-  font-weight: 700;
-  text-decoration: none;
-
-  @include transition(color 0.5s);
-}
-
 // Mini pager
 .pager {
   @include horizontal-list(10px);

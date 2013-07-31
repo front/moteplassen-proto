@@ -1,0 +1,39 @@
+.speakers--grid {
+  & > div {
+    @include padding-leader(0.5);
+  }
+  .speakers--teaser {
+    @include float-span(3);
+    margin-bottom: em($base-line-height * 1.5);
+    border-bottom: 1px dotted lighten($color-body-light, 25%);
+
+    &:nth-child(4n) {
+      @include float-span(3, omega);
+    }
+  }
+}
+
+.speakers--teaser {
+  .title {
+    @include margin-trailer(0.5);
+    font-family: $font-family-sans;
+    font-size: 1em;
+    text-align: center;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  p {
+    @include adjust-font-size-to(14px);
+    @include margin-trailer(0.5, 14px);
+  }
+}
+
+.link--speaker {
+  border-bottom: 1px solid $color-light-grey;
+  font-weight: 700;
+  text-decoration: none;
+
+  @include transition(color 0.5s);
+}

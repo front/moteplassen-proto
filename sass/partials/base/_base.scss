@@ -77,7 +77,7 @@ body {
   font-family: $font-family-sans;
 
   // Debug
-  // @include debug-vertical-alignment('grid-25px.png');
+  // @include debug-vertical-alignment('dev/grid-25px.png');
 }
 
 h1, h2, h3, h4 {
@@ -94,7 +94,7 @@ hr {
   border-top: 1px solid $color-border;
 }
 
-strong, b {
+strong, b, label {
   font-weight: 700;
 }
 
