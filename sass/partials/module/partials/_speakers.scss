@@ -30,10 +30,42 @@
   }
 }
 
+.speakers--teaser-table {
+  @include padding-leader(1.5);
+  @include padding-trailer(1.5);
+  @extend %clearfix;
+
+  border-top: 1px solid $color-border;
+
+  img {
+    @include grid-span(3,1);
+  }
+  > div {
+    @include grid-span(6,4);
+  }
+  footer {
+    @include grid-span(3,10);
+    @include margin-leader(2);
+
+    a {
+      display: block;
+    }
+  }
+}
+
 .link--speaker {
   border-bottom: 1px solid $color-light-grey;
   font-weight: 700;
   text-decoration: none;
 
   @include transition(color 0.5s);
+}
+
+//
+.section--header {
+  p {
+    @include adjust-font-size-to(20px);
+    @include margin-trailer(1.5,20px);
+    font-family: $font-family-serif;
+  }
 }

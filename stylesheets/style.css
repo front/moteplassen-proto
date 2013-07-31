@@ -16,13 +16,13 @@ img, video {
   text-align: left;
 }
 
-.l-container:after, .l-row:after, .credit:after {
+.l-container:after, .l-row:after, .credit:after, .speakers--teaser-table:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.l-container:after, .l-row:after, .credit:after {
+.l-container:after, .l-row:after, .credit:after, .speakers--teaser-table:after {
   content: "";
   display: table;
   clear: both;
@@ -669,6 +669,37 @@ table tr {
   margin-bottom: 0.89286em;
 }
 
+.speakers--teaser-table {
+  padding-top: 2.34375em;
+  padding-bottom: 2.34375em;
+  border-top: 1px solid #dceef4;
+}
+.speakers--teaser-table img {
+  width: 21.73913%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0%;
+  clear: none;
+}
+.speakers--teaser-table > div {
+  width: 47.82609%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 26.08696%;
+  clear: none;
+}
+.speakers--teaser-table footer {
+  width: 21.73913%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+  margin-top: 3.125em;
+}
+.speakers--teaser-table footer a {
+  display: block;
+}
+
 .link--speaker {
   border-bottom: 1px solid #e5e7e8;
   font-weight: 700;
@@ -677,6 +708,13 @@ table tr {
   -moz-transition: color 0.5s;
   -o-transition: color 0.5s;
   transition: color 0.5s;
+}
+
+.section--header p {
+  font-size: 1.25em;
+  line-height: 1.25em;
+  margin-bottom: 1.875em;
+  font-family: "Bree Serif", serif;
 }
 
 .testimonials--form h2 {
