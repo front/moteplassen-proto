@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -415,6 +416,14 @@ table tr {
 }
 .menu--main li.last {
   padding-right: 0;
+}
+.menu--main li:before {
+  content: '·';
+  position: absolute;
+  margin-left: -0.75em;
+}
+.menu--main li:first-child:before {
+  display: none;
 }
 .menu--main a {
   color: #39454b;

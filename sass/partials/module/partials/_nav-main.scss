@@ -10,7 +10,15 @@
   @include adjust-font-size-to(21px, 3);
   text-transform: uppercase;
 
-  li {}
+  li:before {
+    content: '·';
+
+    position: absolute;
+    margin-left: em(-12px);
+  }
+  li:first-child:before {
+    display: none;
+  }
   a {
     color: $color-body;
     text-decoration: none;
