@@ -10,6 +10,9 @@
   @include adjust-font-size-to(21px, 3);
   text-transform: uppercase;
 
+  li {
+    padding-top: 0;
+  }
   li:before {
     content: '·';
 

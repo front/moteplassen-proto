@@ -10,6 +10,11 @@
   @include adjust-font-size-to(48px, 3);
   text-transform: uppercase;
   letter-spacing: em(2,48);
+
+  a {
+    color: $color-body;
+    text-decoration: none;
+  }
 }
 .header--tagline {
   @include adjust-font-size-to(24px, 1);
@@ -21,8 +26,8 @@
   letter-spacing: em(1,24);
 }
 
-// Content
-#content {
+// Main Content
+#main {
 }
 
 // Footer
