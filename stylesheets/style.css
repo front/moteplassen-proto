@@ -473,6 +473,11 @@ table tr {
   color: white;
   text-decoration: none;
 }
+@media screen and (min-width: 700px) {
+  .bottom .menu--main {
+    display: none !important;
+  }
+}
 
 .button {
   display: inline-block;

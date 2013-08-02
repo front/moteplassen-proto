@@ -65,4 +65,7 @@
     &.active {
     }
   }
+      @media screen and (min-width: 700px){
+    display: none !important;
+  }
 }
