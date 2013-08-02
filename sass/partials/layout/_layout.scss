@@ -62,7 +62,7 @@
 }
 
 // Content
-#content {
+#main {
   padding-top: em($base-line-height);
 }
 
@@ -73,7 +73,7 @@
 }
 
 // Page
-.content--home .l-row {
+.main--home .l-row {
   padding-top: em($base-line-height * 1);
   padding-bottom: em($base-line-height * 1);
 }
