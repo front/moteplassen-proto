@@ -24,8 +24,17 @@
   color: $color-light;
   font-weight: 100;
   letter-spacing: em(1,24);
+  text-decoration: none !important;
 }
+.header--menubutton a {
+  @include adjust-font-size-to(24px, 1);
+  @include adjust-leading-to(30/24, 24px);
+  @include margin-trailer(1);
 
+  color: $color-light;
+  font-weight: 100;
+  letter-spacing: em(1,24);
+}
 // Main Content
 #main {
 }
