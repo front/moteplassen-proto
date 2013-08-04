@@ -7,7 +7,7 @@ $button-padding: (44 - $base-line-height);
 
   background-color: $color-link;
 
-  font-size: 1em;
+  @include adjust-font-size-to(16px);
   line-height: em($base-line-height);
   text-align: center;
   text-decoration: none;
