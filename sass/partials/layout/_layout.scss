@@ -37,23 +37,33 @@
 
 // Layout
 .l-left-sidebar {
-  @include grid-span(3,1);
+  @include breakpoint($breakpoint-narrow) {
+    @include grid-span(3,1);
+  }
 }
 
 .l-right-sidebar {
-  @include grid-span(3,10);
+  @include breakpoint($breakpoint-narrow) {
+    @include grid-span(3,10);
+  }
 }
 
 .l-column--two-sidebars {
-  @include grid-span(6,4);
+  @include breakpoint($breakpoint-narrow) {
+    @include grid-span(6,4);
+  }
 }
 
 .l-column--left-sidebar {
-  @include grid-span(9,4);
+  @include breakpoint($breakpoint-narrow) {
+    @include grid-span(9,4);
+  }
 }
 
 .l-column--right-sidebar {
-  @include grid-span(9,1);
+  @include breakpoint($breakpoint-narrow) {
+    @include grid-span(9,1);
+  }
 }
 
 // Header
