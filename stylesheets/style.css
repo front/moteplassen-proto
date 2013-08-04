@@ -172,6 +172,16 @@ table td {
 body {
   color: #39454b;
   font-family: "Asap", sans-serif;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(5%, rgba(0, 0, 0, 0.5)), color-stop(5%, rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+  -webkit-background-size: 100% 1.5625em;
+  -moz-background-size: 100% 1.5625em;
+  -o-background-size: 100% 1.5625em;
+  background-size: 100% 1.5625em;
+  background-position: left top;
 }
 
 h1, h2, h3, h4 {
@@ -346,6 +356,7 @@ table tr {
 .credit {
   margin-bottom: 0;
   font-size: 0.875em;
+  line-height: 1.78571em;
   text-align: right;
 }
 .credit a {
@@ -356,14 +367,10 @@ table tr {
   margin: 0;
   padding: 0;
   border: 0;
+  overflow: hidden;
   font-size: 0.875em;
   line-height: 1.78571em;
   font-weight: 700;
-}
-.pager:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 .pager li {
   list-style-image: none;
@@ -406,17 +413,13 @@ table tr {
   margin: 0;
   padding: 0;
   border: 0;
+  overflow: hidden;
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
   font-size: 1.3125em;
   line-height: 3.57143em;
   text-transform: uppercase;
-}
-#header .menu--main:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 #header .menu--main li {
   list-style-image: none;
@@ -497,6 +500,7 @@ table tr {
   background-color: #50acca;
   font-size: 1em;
   line-height: 1.5625em;
+  line-height: 1.5625em;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -563,11 +567,7 @@ table tr {
   margin: 0;
   padding: 0;
   border: 0;
-}
-.menu--social-media:after {
-  content: "";
-  display: table;
-  clear: both;
+  overflow: hidden;
 }
 .menu--social-media li {
   list-style-image: none;
@@ -668,6 +668,7 @@ table tr {
 .block--sponsors h2 {
   font-family: "Asap", sans-serif;
   font-size: 0.75em;
+  line-height: 2.08333em;
   line-height: 1;
   margin-bottom: -1em;
 }
@@ -724,6 +725,7 @@ table tr {
   margin-bottom: 0.78125em;
   font-family: "Asap", sans-serif;
   font-size: 1em;
+  line-height: 1.5625em;
   text-align: center;
 }
 .speakers--teaser img {
@@ -860,12 +862,8 @@ table tr {
   margin: 0;
   padding: 0;
   border: 0;
+  overflow: hidden;
   margin-bottom: 1.5625em;
-}
-.program--nav:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 .program--nav li {
   list-style-image: none;

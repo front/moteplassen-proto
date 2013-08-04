@@ -51,7 +51,7 @@
   @extend %l-row;
   margin-bottom: 0;
 
-  font-size: em(14);
+  @include adjust-font-size-to(14px);
   text-align: right;
 
   a {
