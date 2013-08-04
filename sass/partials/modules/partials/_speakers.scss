@@ -3,12 +3,15 @@
     @include padding-leader(0.5);
   }
   .speakers--teaser {
-    @include float-span(3);
     margin-bottom: em($base-line-height * 1.5);
     border-bottom: 1px dotted lighten($color-body-light, 25%);
 
-    &:nth-child(4n) {
-      @include float-span(3, omega);
+    @include breakpoint($breakpoint-narrow) {
+      @include float-span(3);
+
+      &:nth-child(4n) {
+        @include float-span(3, omega);
+      }
     }
   }
 }
@@ -20,13 +23,20 @@
     @include adjust-font-size-to(16px);
     text-align: center;
   }
-  img {
-    width: 100%;
+  img{
+    display: block;
+    width: 80%;
     height: auto;
+    margin: 0 auto;
   }
   p {
     @include adjust-font-size-to(14px);
     @include margin-trailer(0.5, 14px);
+  }
+  @include breakpoint($breakpoint-narrow) {
+    img {
+      width: 100%;
+    }
   }
 }
 
