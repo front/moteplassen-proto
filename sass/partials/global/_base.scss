@@ -11,9 +11,15 @@
 // Compass Extensions
 @import 'toolkit';
 @import 'singularitygs';
+@import "breakpoint";
+
 
 // Private Imports
 @import 'variables';
 @import 'functions';
 @import 'mixins';
 @import 'extendables';
+
+// Compass
+@import "compass";
+// @import "normalize";
