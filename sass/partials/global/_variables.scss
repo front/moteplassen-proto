@@ -11,7 +11,12 @@ $base-font-size: 16px;
 $base-line-height: 25px;
 
 // Layout
-$max-width: 920px;
+// $max-width: 920px;
+
+// Breakpoints
+$breakpoint-narrow: 750px;
+$breakpoint-normal: 800px;
+$breakpoint-wide:   970px;
 
 $grids: 12;
 $gutters: 1;
