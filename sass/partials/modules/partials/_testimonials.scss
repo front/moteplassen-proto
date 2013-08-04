@@ -1,6 +1,7 @@
 .testimonials--form {
   h2 {
     @include adjust-leading-to(38/26, 26px);
+    @include leader(1,26px);
   }
   textarea {
     @include margin-trailer(0.5);

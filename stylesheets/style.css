@@ -172,16 +172,6 @@ table td {
 body {
   color: #39454b;
   font-family: "Asap", sans-serif;
-  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(5%, rgba(0, 0, 0, 0.5)), color-stop(5%, rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  -webkit-background-size: 100% 1.5625em;
-  -moz-background-size: 100% 1.5625em;
-  -o-background-size: 100% 1.5625em;
-  background-size: 100% 1.5625em;
-  background-position: left top;
 }
 
 h1, h2, h3, h4 {
@@ -250,44 +240,54 @@ table tr {
   text-align: left;
 }
 
-.l-left-sidebar {
-  width: 21.73913%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0%;
-  clear: none;
+@media (min-width: 750px) {
+  .l-left-sidebar {
+    width: 21.73913%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+  }
 }
 
-.l-right-sidebar {
-  width: 21.73913%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none;
+@media (min-width: 750px) {
+  .l-right-sidebar {
+    width: 21.73913%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
 }
 
-.l-column--two-sidebars {
-  width: 47.82609%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 26.08696%;
-  clear: none;
+@media (min-width: 750px) {
+  .l-column--two-sidebars {
+    width: 47.82609%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 26.08696%;
+    clear: none;
+  }
 }
 
-.l-column--left-sidebar {
-  width: 73.91304%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none;
+@media (min-width: 750px) {
+  .l-column--left-sidebar {
+    width: 73.91304%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
 }
 
-.l-column--right-sidebar {
-  width: 73.91304%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0%;
-  clear: none;
+@media (min-width: 750px) {
+  .l-column--right-sidebar {
+    width: 73.91304%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+  }
 }
 
 #header {
@@ -345,6 +345,14 @@ table tr {
   color: #def2fe;
   font-weight: 100;
   letter-spacing: 0.04167em;
+}
+
+@media (max-width: 750px) {
+  #content, #postscript {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
 }
 
 #footer {
@@ -458,9 +466,9 @@ table tr {
 #header .menu--main a:hover, #header .menu--main a.active {
   color: white;
 }
-@media screen and (max-width: 700px) {
+@media (max-width: 750px) {
   #header .menu--main {
-    display: none !important;
+    display: none;
   }
 }
 
@@ -487,7 +495,7 @@ table tr {
   color: white;
   text-decoration: none;
 }
-@media screen and (min-width: 700px) {
+@media (min-width: 750px) {
   #bottom-menu .menu--main {
     display: none !important;
   }
@@ -706,19 +714,23 @@ table tr {
   padding-top: 0.78125em;
 }
 .speakers--grid .speakers--teaser {
-  width: 21.73913%;
-  clear: right;
-  float: left;
-  margin-left: 0%;
-  margin-right: 4.34783%;
   margin-bottom: 2.34375em;
   border-bottom: 1px dotted #b7c2c8;
 }
-.speakers--grid .speakers--teaser:nth-child(4n) {
-  width: 21.73913%;
-  clear: right;
-  float: right;
-  margin-right: 0%;
+@media (min-width: 750px) {
+  .speakers--grid .speakers--teaser {
+    width: 21.73913%;
+    clear: right;
+    float: left;
+    margin-left: 0%;
+    margin-right: 4.34783%;
+  }
+  .speakers--grid .speakers--teaser:nth-child(4n) {
+    width: 21.73913%;
+    clear: right;
+    float: right;
+    margin-right: 0%;
+  }
 }
 
 .speakers--teaser .title {
@@ -729,13 +741,20 @@ table tr {
   text-align: center;
 }
 .speakers--teaser img {
-  width: 100%;
+  display: block;
+  width: 80%;
   height: auto;
+  margin: 0 auto;
 }
 .speakers--teaser p {
   font-size: 0.875em;
   line-height: 1.78571em;
   margin-bottom: 0.89286em;
+}
+@media (min-width: 750px) {
+  .speakers--teaser img {
+    width: 100%;
+  }
 }
 
 .speakers--teaser-table {
@@ -788,6 +807,7 @@ table tr {
 
 .testimonials--form h2 {
   line-height: 1.40533em;
+  margin-top: 0.96154em;
 }
 .testimonials--form textarea {
   margin-bottom: 0.78125em;

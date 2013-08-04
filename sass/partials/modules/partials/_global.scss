@@ -36,7 +36,13 @@
   letter-spacing: em(1,24);
 }
 // Main Content
-#main {
+#content, #postscript {
+
+  @include breakpoint($breakpoint-non-narrow) {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  }
 }
 
 // Footer
