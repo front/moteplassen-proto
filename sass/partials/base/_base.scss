@@ -77,7 +77,7 @@ body {
   font-family: $font-family-sans;
 
   // Debug
-  // @include debug-vertical-alignment('dev/grid-25px.png');
+  @include debug-vertical-alignment();
 }
 
 h1, h2, h3, h4 {
