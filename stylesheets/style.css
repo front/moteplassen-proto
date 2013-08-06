@@ -518,6 +518,13 @@ table tr {
   min-width: 255px;
 }
 
+.header--menubutton {
+  background: #39454b;
+}
+.header--menubutton a {
+  text-decoration: none !important;
+}
+
 .event--table td {
   vertical-align: top;
 }

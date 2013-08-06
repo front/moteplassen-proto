@@ -27,3 +27,10 @@ $button-padding: (44 - $base-line-height);
     min-width: 170px * 1.5;
   }
 }
+
+.header--menubutton {
+  background: $color-body;
+  a {
+      text-decoration: none !important;
+  }
+}
