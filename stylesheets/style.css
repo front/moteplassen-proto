@@ -166,7 +166,7 @@ table {
   margin-bottom: 1.5625em;
 }
 table td {
-  padding: 1.375em 1.25em;
+  padding: 1.375em 0.625em;
 }
 
 body {
@@ -347,14 +347,6 @@ table tr {
   letter-spacing: 0.04167em;
 }
 
-@media (max-width: 750px) {
-  #content, #postscript {
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 90%;
-  }
-}
-
 #footer {
   background-color: #39454b;
   color: white;
@@ -497,7 +489,7 @@ table tr {
 }
 @media (min-width: 750px) {
   #bottom-menu .menu--main {
-    display: none !important;
+    display: none;
   }
 }
 
@@ -529,6 +521,11 @@ table tr {
 .event--table td {
   vertical-align: top;
 }
+@media (min-width: 750px) {
+  .event--table td {
+    padding: 1.375em 1.25em;
+  }
+}
 
 .event--break {
   background-color: #f6fbfc;
@@ -543,6 +540,7 @@ table tr {
 
 .event--description {
   padding-left: 0;
+  min-width: 200px;
 }
 
 .event--speaker {

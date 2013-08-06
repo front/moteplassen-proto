@@ -1,6 +1,9 @@
 .event--table {
   td {
     vertical-align: top;
+    @include breakpoint($breakpoint-narrow) {
+      padding: em(22) em(20);
+    }
   }
 }
 
@@ -23,6 +26,7 @@
 
 .event--description {
   padding-left: 0;
+  min-width: 200px;
 }
 
 .event--speaker {
